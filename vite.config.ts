@@ -49,5 +49,6 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
     cssCodeSplit: true,
+    copyPublicDir: false,
   },
 })
