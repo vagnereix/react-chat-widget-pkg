@@ -11,12 +11,12 @@ import {
 
 import { useChat } from '@/hooks/use-chat';
 import { HeaderContent } from '@/components/chat-widget/chat-header-content';
-import { Logo } from '@/assets/logo';
 import { AboutEloquent } from '@/components/about-eloquent';
 import { ChatAuth } from '@/components/chat-widget/chat-auth';
 import type { ChatWidgetProps } from '@/components/chat-widget';
 import { useAuth } from '@/contexts/auth-context';
 import { ChatFooter } from '@/components/chat-widget/chat-footer';
+import { LogoWithBrand } from '@/components/logo-with-brand';
 
 type ChatContentProps = {
   showHeader?: boolean;
@@ -51,9 +51,7 @@ export function ChatContent({
                 className="px-0"
               >
                 {message.role === "model" && (
-                  <div className="bg-chat-widget-brand rounded-full p-0.5">
-                    <Logo className="text-white size-4" />
-                  </div>
+                  <LogoWithBrand size="small" className="p-0.5" />
                 )}
                 
                 <MessageContent>{message.content}</MessageContent>

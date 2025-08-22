@@ -1,11 +1,9 @@
-import { Logo } from "@/assets/logo";
+import { LogoWithBrand } from "@/components/logo-with-brand";
 
 export function AboutEloquent() {
   return (
     <div className='flex flex-col items-center gap-2 my-6'>
-      <div className="bg-chat-widget-brand p-1">
-        <Logo className=" text-white size-10" />
-      </div>
+      <LogoWithBrand size="large" className="p-1 rounded-none" />
 
       <div className='flex flex-col items-center'>
         <span className='text-sm font-semibold'>Eloquent AI responds instantly</span>
