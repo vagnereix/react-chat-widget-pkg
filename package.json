@@ -31,7 +31,8 @@
     "build:watch": "vite build --watch",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "deploy": "npm version patch && npm publish"
   },
   "peerDependencies": {
     "react": "^18 || ^19",
