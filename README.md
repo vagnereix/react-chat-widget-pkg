@@ -117,7 +117,7 @@ This library ships with a minimal, client-only auth context for demonstration:
 - Input is disabled when `isInMaintenanceMode`
 - Input is disabled until authenticated (mock)
 
-## Local Development and Testing via npm link
+## Local Development and Testing
 
 When iterating on this library and testing in a separate React app:
 
@@ -127,7 +127,10 @@ When iterating on this library and testing in a separate React app:
     # in react-chat-widget-pkg
     npm install
     npm run build
+
     npm link
+    # or
+    npm pack
     ```
 
 2) In your consumer app:
@@ -135,6 +138,8 @@ When iterating on this library and testing in a separate React app:
     ```bash
     # inside your other React app
     npm link react-chat-widget-pkg
+    # or
+    npm install path/to/react-chat-widget-pkg/react-chat-widget-pkg-0.1.3.tgz
     ```
 
 3) In the consumer app, import and render:
