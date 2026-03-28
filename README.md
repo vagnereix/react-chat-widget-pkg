@@ -30,6 +30,12 @@ export default function App() {
 
 The component injects its CSS via the library build; to override theme tokens, see Theming below.
 
+## Examples
+
+<img src="./.github/image-3.png" alt="Chat widget — conversation view">
+<img src="./.github/image-4.png" alt="Chat widget — UI detail">
+<img src="./.github/image-5.png" alt="Chat widget — themed or maintenance state">
+
 ## Props
 
 ```ts
@@ -80,6 +86,10 @@ Usage:
 ```tsx
 <ChatWidget className="chat-color-palette" />
 ```
+
+Example of a customized palette (brand blue, user bubbles, assistant/error bubbles, and chrome):
+
+<img src="./.github/image-6-theming.png" alt="Chat widget with custom CSS variable theming — brand color, user and assistant bubbles, and chrome">
 
 You can define the class anywhere in your app’s global stylesheet so it’s available at runtime.
 
