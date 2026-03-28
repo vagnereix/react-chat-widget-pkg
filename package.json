@@ -28,10 +28,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:watch": "vite build --watch",
+    "build:lib": "vite build --config vite.config.lib.ts",
+    "build:watch": "vite build --watch --config vite.config.lib.ts",
+    "build:all": "npm run build && npm run build:lib",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build:lib",
     "deploy": "npm version patch && npm publish"
   },
   "peerDependencies": {
